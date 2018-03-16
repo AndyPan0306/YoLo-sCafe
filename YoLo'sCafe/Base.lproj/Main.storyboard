@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gD3-Pw-QFX">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--YOLO's Cafe'-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="YoLo_sCafe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yolo'scafe" translatesAutoresizingMaskIntoConstraints="NO" id="MBd-Zg-oGU">
+                                <rect key="frame" x="62" y="281" width="250" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="125"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="YOLO's Cafe'" id="5Z2-AV-9pL">
+                        <barButtonItem key="backBarButtonItem" title="Home" id="DDj-0j-A10"/>
+                        <barButtonItem key="rightBarButtonItem" title="Menu" id="ywo-6D-375">
+                            <connections>
+                                <segue destination="sYD-dl-B3D" kind="show" id="C57-nY-Ve4"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-463" y="668"/>
+        </scene>
+        <!--Menu1-->
+        <scene sceneID="EJE-od-qU6">
+            <objects>
+                <viewController id="sYD-dl-B3D" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IPL-ca-yPC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Menu1" translatesAutoresizingMaskIntoConstraints="NO" id="CnZ-pH-dVA">
+                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="uda-Zw-0nk"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Menu1" id="VXH-Rz-N0u">
+                        <barButtonItem key="rightBarButtonItem" title="Menu2" id="gMW-R1-1KB">
+                            <connections>
+                                <segue destination="lnb-DG-e7g" kind="show" id="iY9-FS-Hib"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qV9-OL-4Bc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="249" y="668"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ZIT-Mk-cXM">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="gD3-Pw-QFX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="2Ov-Eu-qqb"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SNT-M2-11p">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="AdJ-kg-yyf" kind="relationship" relationship="viewControllers" id="gFw-Tv-ytn"/>
+                        <segue destination="GQZ-uR-ee6" kind="relationship" relationship="viewControllers" id="fPO-Bk-7k9"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yg9-zR-Lb9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1175" y="-88"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="AW2-4Y-LJ5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AdJ-kg-yyf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="test" id="tbX-nc-AQJ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ALq-7l-As3">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="cgQ-mt-JBI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gtb-TS-XzX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-463" y="-88"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="Mkv-xh-ZaZ">
+            <objects>
+                <viewController id="lnb-DG-e7g" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tdf-fD-3Sp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Menu2" translatesAutoresizingMaskIntoConstraints="NO" id="Lcn-fJ-JAB">
+                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="x1D-Hd-BhE"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Y26-Mg-Vx0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SL3-0Z-l2S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1006" y="668"/>
+        </scene>
+        <!--相片首頁-->
+        <scene sceneID="ZRI-xn-guS">
+            <objects>
+                <viewController id="LIT-XA-vq9" customClass="ViewController" customModule="YoLo_sCafe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="odx-CO-k5d">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Photo1" translatesAutoresizingMaskIntoConstraints="NO" id="y9P-PL-HWN">
+                                <rect key="frame" x="25" y="154" width="325" height="505"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="q9F-H0-xOd"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="相片首頁" id="ylQ-lN-hUy">
+                        <barButtonItem key="rightBarButtonItem" title="相片1" id="sHK-hU-ltU">
+                            <connections>
+                                <segue destination="w22-Ge-glJ" kind="show" id="Ga8-4g-Xx0">
+                                    <nil key="action"/>
+                                </segue>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eB8-bC-RSp" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-463.19999999999999" y="1378.8177339901479"/>
+        </scene>
+        <!--相片1-->
+        <scene sceneID="TpA-WF-umt">
+            <objects>
+                <viewController id="w22-Ge-glJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CM7-Wy-7fL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Photo2" translatesAutoresizingMaskIntoConstraints="NO" id="XfG-4m-ZOF">
+                                <rect key="frame" x="25" y="154" width="325" height="505"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="cf2-zZ-Ub0"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="相片1" id="8fD-Ay-aoP">
+                        <barButtonItem key="rightBarButtonItem" title="相片2" id="6as-pF-NRl">
+                            <connections>
+                                <segue destination="l4q-QU-rEF" kind="show" id="hng-8M-X9U">
+                                    <nil key="action"/>
+                                </segue>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pfS-OF-gq6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="252" y="1379.5566502463055"/>
+        </scene>
+        <!--相片2-->
+        <scene sceneID="DWi-g3-tpJ">
+            <objects>
+                <viewController id="l4q-QU-rEF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fEz-l6-8Ga">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Photo3" translatesAutoresizingMaskIntoConstraints="NO" id="GKb-BC-f68">
+                                <rect key="frame" x="25" y="154" width="325" height="505"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="NBy-XW-GWW"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="bPd-0F-MVU"/>
+                    <navigationItem key="navigationItem" title="相片2" id="kUp-wK-hEu">
+                        <barButtonItem key="rightBarButtonItem" title="相片3" id="yZh-be-FNC">
+                            <connections>
+                                <segue destination="438-a3-Pht" kind="show" id="yep-2m-t3N"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nl4-mN-CVP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationBar contentMode="scaleToFill" id="TnC-Gt-6tV">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <items>
+                        <navigationItem title="Title" id="oIq-k3-xXy"/>
+                    </items>
+                </navigationBar>
+            </objects>
+            <point key="canvasLocation" x="1005.6" y="1378.8177339901479"/>
+        </scene>
+        <!--Photo-->
+        <scene sceneID="gWP-yC-Tkp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GQZ-uR-ee6" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Photo" selectedImage="instagramIcon" id="gyY-Lf-DZF"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5rl-s5-tlF">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="LIT-XA-vq9" kind="relationship" relationship="rootViewController" id="2Ns-lQ-Jvq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C2z-VE-6DQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1175" y="1379"/>
+        </scene>
+        <!--相片3-->
+        <scene sceneID="7VO-Tz-3aq">
+            <objects>
+                <viewController id="438-a3-Pht" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PnZ-Wq-3gp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Photo4" translatesAutoresizingMaskIntoConstraints="NO" id="Wga-L2-i0J">
+                                <rect key="frame" x="12" y="231" width="350" height="350"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="8DL-9m-vl0"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="67l-Kb-Djx"/>
+                    <navigationItem key="navigationItem" title="相片3" id="BWA-TS-zzf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o7K-Ob-FKB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationBar contentMode="scaleToFill" id="SoU-xw-3jx">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <items>
+                        <navigationItem title="Title" id="HB8-gU-okt"/>
+                    </items>
+                </navigationBar>
+            </objects>
+            <point key="canvasLocation" x="1797.5999999999999" y="1379.5566502463055"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Menu1" width="960" height="678"/>
+        <image name="Menu2" width="960" height="678"/>
+        <image name="Photo1" width="1014" height="1012"/>
+        <image name="Photo2" width="1194" height="894"/>
+        <image name="Photo3" width="1194" height="898"/>
+        <image name="Photo4" width="1192" height="894"/>
+        <image name="instagramIcon" width="30" height="30"/>
+        <image name="test" width="30" height="30"/>
+        <image name="yolo'scafe" width="709" height="709"/>
+    </resources>
+</document>
